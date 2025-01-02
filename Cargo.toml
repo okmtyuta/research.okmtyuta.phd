@@ -1,0 +1,21 @@
+# [PROJECT_DIR]/Cargo.toml
+[workspace]
+members = ["api", 'client', "lib", "client", "client"]
+
+[workspace.package]
+version = "1.2.3"
+authors = ["Nice Folks"]
+description = "A short description of my package"
+documentation = "https://example.com/bar"
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
